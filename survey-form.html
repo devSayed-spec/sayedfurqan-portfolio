@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Formulir Pendaftaran Workshop Teknologi 2025</h1> 
+    <p id="description">Daftar sekarang untuk mengikuti workshop teknologi terbaru dan tingkatkan skill programming Anda bersama para expert!</p>
+    
+    <form id="survey-form">
+        <!-- Kolom nama -->
+        <label id="name-label" for="name">Nama Lengkap:</label>
+        <input id="name" name="name" type="text" placeholder="Masukkan nama lengkap Anda" required />
+        
+        <!-- Kolom email -->
+        <label id="email-label" for="email">Alamat Email:</label>
+        <input id="email" name="email" type="email" placeholder="contoh@email.com" required />
+        
+        <!-- Kolom usia -->
+        <label id="number-label" for="number">Umur:</label>
+        <input id="number" name="number" type="number" min="15" max="65" placeholder="25" />
+        
+        <!-- Dropdown select -->
+        <label for="dropdown">Pilih Kategori Workshop</label>
+        <select id="dropdown" name="dropdown">
+            <option value="" disabled selected>Pilih Katagori</option>
+            <option value="web-dev">Web Development</option>
+            <option value="Mobile-dev">Mobile Development</option>
+            <option value="data-Science">Data Science & AI</option>
+            <option value="cloud">Cloud Computing</option>
+            <option value="cybersecurity">Cybersecurity</option>
+        </select>
+        
+        <!-- Tombol radio -->
+        <fieldset>
+            <legend>Level Pengalaman Anda</legend>
+            <label>
+                <input type="radio" name="experience" value="beginner">
+                Pemula (Baru memulai)
+            </label>
+            <label>
+                <input type="radio" name="experience" value="intermediate">
+                Menengah (1-3 tahun pengalaman)
+            </label>
+            <label>
+                <input type="radio" name="experience" value="advanced">
+                Mahir (3+ tahun pengalaman)
+            </label>
+        </fieldset>
+        
+        <!-- Kotak centang -->
+        <fieldset>
+            <legend>Topik Spesifik yang Ingin Dipelajari (pilih semua yang sesuai)</legend>
+            <label>
+                <input type="checkbox" name="topics" value="javascript">
+                Javascript
+            </label>
+            <label>
+                <input type="checkbox" name="topics" value="python">
+                Python Programming
+            </label>
+            <label>
+                <input type="checkbox" name="topics" value="database">
+                Database Management
+            </label>
+            <label>
+                <input type="checkbox" name="topics" value="uiux">
+                UI/UX Design
+            </label>
+            <label>
+                <input type="checkbox" name="topics" value="devops">
+                DevOps & Deployment
+            </label>
+            <label>
+                <input type="checkbox" name="topics" value="ap">
+                API Development
+            </label>
+        </fieldset>
+        
+        <label for="comments">Harapan atau Pertanyaan</label>
+        <!-- Textarea untuk komentar -->
+        <textarea id="comments" name="comments" placeholder="Ceritakan apa yang ingin Anda pelajari atau pertanyaan seputar workshop..." rows="5"></textarea>
+        
+        <!-- Tombol submit -->
+        <button id="submit" type="submit">Kirim Pendaftaran</button>
+    </form>
+</body>
+</html>
